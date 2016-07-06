@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="_index.master.cs" Inherits="_index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Marathon Skills 2016</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header class="default-background navbar-top">
+        <asp:Button ID="btnBackToDefault" runat="server" Text="Back" CssClass="btn btn-default btn-sm" OnClick="btnBackToDefault_Click" />
+        <strong class="default-header-text">MARATHON SKILLS 2016</strong>
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="btn btn-default btn-sm" OnClick="btnBackToDefault_Click" style="float:right"/>
+    </header>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <footer class="navbar-fixed-bottom default-background default-footer">
+        <div class="container">
+            <div class="text-center">
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer>
+                        <asp:Label ID="lblFooterTime" runat="server"></asp:Label>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>
