@@ -23,8 +23,8 @@
     </header>
     <section class="container">
         <div class="col-lg-6 col-lg-offset-3">
-            <a href="#" class="btn btn-default btn-block btn-index-big"><h4>I want to be a runner</h4></a>
-            <a href="#" class="btn btn-default btn-block btn-index-big"><h4>I want to sponsor a runner</h4></a>
+            <a href="User/Runner/Register.aspx" class="btn btn-default btn-block btn-index-big"><h4>I want to be a runner</h4></a>
+            <a href="Sponsor/SponsorRunner.aspx" class="btn btn-default btn-block btn-index-big"><h4>I want to sponsor a runner</h4></a>
             <a href="More/MoreInfo.aspx" class="btn btn-default btn-block btn-index-big"><h4>I want to find out more</h4></a>
         </div>
     </section>

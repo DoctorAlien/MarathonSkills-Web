@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_index.master" AutoEventWireup="true" CodeFile="AdminMenu.aspx.cs" Inherits="User_Admin_AdminMenu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/_index.master" AutoEventWireup="true" CodeFile="AdminMenu.aspx.cs" Inherits="User_Admin_AdminMenu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

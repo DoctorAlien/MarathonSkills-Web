@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_index.master" AutoEventWireup="true" CodeFile="SponsorRunner.aspx.cs" Inherits="Sponsor_SponsorRunner" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/_index.master" AutoEventWireup="true" CodeFile="SponsorRunner.aspx.cs" Inherits="Sponsor_SponsorRunner" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -84,7 +84,7 @@
                         <div class="donate-body">
                             <h1>$<asp:Label ID="lblMoney" runat="server" Text="0"></asp:Label></h1>
                             <asp:Button ID="btnMinus" runat="server" Text="-" CssClass="btn" OnClick="btnMinus_Click" />
-                            <asp:TextBox ID="txtDonate" runat="server" Text="0" CssClass="text-center" TextMode="Number" AutoPostBack="True" OnTextChanged="txtDonate_TextChanged"></asp:TextBox>
+                            <asp:TextBox ID="txtDonate" runat="server" Text="0" CssClass="text-center" AutoPostBack="True" OnTextChanged="txtDonate_TextChanged"></asp:TextBox>
                             <asp:Button ID="btnPlus" runat="server" Text="+" CssClass="btn" OnClick="btnPlus_Click"/>
                         </div>
                         <div class="donate-footer" style="margin-top:30px;">
@@ -107,11 +107,11 @@
                 } else {
                     $("#charity-modal").hide();
                 }
-
             });
             $("#charity-modal-close").click(function () {
                 $("#charity-modal").hide();
             });
+
         });
     </script>
 </asp:Content>

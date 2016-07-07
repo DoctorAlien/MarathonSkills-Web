@@ -20,6 +20,7 @@ public partial class _index : System.Web.UI.MasterPage
     }
     protected void btnBackToDefault_Click(object sender, EventArgs e)
     {
-        Response.Redirect("../Default.aspx");
+        string default_path = "http://"+Request.Url.Authority+ "/web/Default.aspx";
+        Response.Redirect(default_path);
     }
 }
