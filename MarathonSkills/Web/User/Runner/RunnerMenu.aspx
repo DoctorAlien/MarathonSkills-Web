@@ -14,7 +14,7 @@
                     <a href="#" class="btn btn-default default-btn-more"><h4><em>My race results</em></h4></a>
                 </div>
                 <div class="col-lg-6">
-                    <a href="#" class="btn btn-default default-btn-more"><h4><em>Edit runner profile</em></h4></a>
+                    <a href="RunnerProfile.aspx" class="btn btn-default default-btn-more"><h4><em>Edit runner profile</em></h4></a>
                 </div>
                 <div class="col-lg-6">
                     <a href="#" class="btn btn-default default-btn-more"><h4><em>My sponsorship</em></h4></a>

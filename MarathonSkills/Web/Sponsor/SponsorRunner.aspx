@@ -82,10 +82,10 @@
                     <div class="donate-main">
                         <h3><strong>Amount to donate</strong></h3>
                         <div class="donate-body">
-                            <h1>$<asp:Label ID="lblMoney" runat="server" Text="0"></asp:Label></h1>
-                            <asp:Button ID="btnMinus" runat="server" Text="-" CssClass="btn" OnClick="btnMinus_Click" />
-                            <asp:TextBox ID="txtDonate" runat="server" Text="0" CssClass="text-center" AutoPostBack="True" OnTextChanged="txtDonate_TextChanged"></asp:TextBox>
-                            <asp:Button ID="btnPlus" runat="server" Text="+" CssClass="btn" OnClick="btnPlus_Click"/>
+                            <h1>$<span id="donate-sum">0</span></h1>
+                            <a class="btn btn-default" id="donate-minus">-</a>
+                            <input type="text" class="text-center" value="0" id="donate-money" onkeydown="donateChange()" onkeyup="donateChange()" onkeypress="donateChange()"/>
+                            <a class="btn btn-default" id="donate-plus">+</a>
                         </div>
                         <div class="donate-footer" style="margin-top:30px;">
                             <asp:Button ID="btnPayNow" runat="server" Text="Pay now" CssClass="btn"/>
@@ -111,8 +111,26 @@
             $("#charity-modal-close").click(function () {
                 $("#charity-modal").hide();
             });
-
+            
+            var donate_money = 0;
+            $("#donate-minus").click(function () {
+                donate_money = parseInt($("#donate-money").val());
+                if (donate_money >= 10) {
+                    donate_money = donate_money - 10;
+                }
+                $("#donate-sum").text(donate_money);
+                $("#donate-money").val(donate_money);
+            });
+            $("#donate-plus").click(function () {
+                donate_money = parseInt($("#donate-money").val());
+                donate_money += 10;
+                $("#donate-sum").text(donate_money);
+                $("#donate-money").val(donate_money);
+            })
         });
+        function donateChange() {
+            $("#donate-sum").text($("#donate-money").val());
+        }
     </script>
 </asp:Content>
 

@@ -72,7 +72,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <asp:Button ID="btnRegister" runat="server" Text="Register" CssClass="btn" />
+                                    <a href="RegisterConfirm.aspx" class="btn btn-default">Register</a>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="btn" />
                                 </div>
