@@ -14,7 +14,7 @@
                     <a href="#" class="btn btn-default default-btn-more"><h4><em>Previous race results</em></h4></a>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2">
-                    <a href="#" class="btn btn-default default-btn-more"><h4><em>BMI calculator</em></h4></a>
+                    <a href="BMICalculator.aspx" class="btn btn-default default-btn-more"><h4><em>BMI calculator</em></h4></a>
                 </div>
             </div>
         </div>

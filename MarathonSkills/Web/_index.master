@@ -13,9 +13,11 @@
 <body>
     <form id="form1" runat="server">
     <header class="default-background navbar-top">
-        <asp:Button ID="btnBackToDefault" runat="server" Text="Back" CssClass="btn btn-default btn-sm" OnClick="btnBackToDefault_Click" />
+        <a class="btn btn-default btn-sm" id="back" onclick="goBack()">back</a>
         <strong class="default-header-text">MARATHON SKILLS 2016</strong>
-        <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="btn btn-default btn-sm" OnClick="btnBackToDefault_Click" style="float:right"/>
+        <a class="btn btn-default btn-sm pull-right" id="logout" onclick="goBack()">Logout</a>
+        
+        
     </header>
     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
     <footer class="navbar-fixed-bottom default-background default-footer">
@@ -33,4 +35,9 @@
     </footer>
     </form>
 </body>
+    <script>
+        function goBack() {
+            history.back(-1);
+        }
+    </script>
 </html>

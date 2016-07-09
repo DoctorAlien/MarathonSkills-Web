@@ -18,9 +18,5 @@ public partial class _index : System.Web.UI.MasterPage
         string toseconds = ts.Seconds.ToString();
         lblFooterTime.Text = toDay + " days " + tohours + " hours and " + tominutes + " minutes " + toseconds + " seconds until the race starts!";
     }
-    protected void btnBackToDefault_Click(object sender, EventArgs e)
-    {
-        string default_path = "http://"+Request.Url.Authority+ "/web/Default.aspx";
-        Response.Redirect(default_path);
-    }
+    
 }

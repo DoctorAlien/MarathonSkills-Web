@@ -65,15 +65,15 @@
                     <div class="charity-main">
                         <h3><strong>Charity</strong></h3>
                         <div class="charity-body">
-                            Save The Cats Fund <div id="charity-info" style="border:solid 1px #8c8c8c;border-radius:50%;width:22px;height:22px;float:right">i</div>
+                            Save The Cats Fund <div id="charity-info" style="border:solid 1px #8c8c8c;border-radius:50%;width:22px;height:22px;float:right;cursor:pointer">i</div>
                         </div>
-                        <div id="charity-modal" class="charity-modal-main" style="display:none;">
-                            <div class="charity-modal-header">
-                                <div style="float:right" id="charity-modal-close">close</div>
+                        <div id="charity-modal" class="common-modal-main modal-main" style="display:none;">
+                            <div class="common-modal-header">
+                                <div style="float:right;cursor:pointer" id="charity-modal-close">x</div>
                                 <h3>Name of the Charity</h3>
                                 <img src="#" alt="Logo" />
                             </div>
-                            <div class="charity-modal-body">
+                            <div class="common-modal-body">
                                 <p>This would be the long description of the charity.It could go for a few paragraphs</p>
                                 <p>This is more of the description down here,and this is some more of the description also.</p>
                             </div>

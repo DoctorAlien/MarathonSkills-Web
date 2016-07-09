@@ -1,7 +1,8 @@
 ﻿.default-background {background-color:#131239;color:white;}
 .default-footer {padding:10px;}
 .default-header-text {margin-left:30px;font-size:2em;position:absolute;margin-top:-3px;}
-
+.modal-main {position:fixed;background-color:white;z-index:99999;}
+.common-modal-main {border:solid 1px #8c8c8c;padding:0px 10px 20px 10px;margin-top:15px;margin-bottom:15px;width:365px;height:200px;}
 /*Default.aspx*/
 .btn-index-big {padding-top:30px;padding-bottom:30px;margin-bottom:25px;}
 .btn-index-small {padding-right:20px;padding-left:20px;}
@@ -10,5 +11,4 @@
 .default-btn-more {padding-top:30px;padding-bottom:30px;margin-bottom:25px;display:block}
 /*User/Login.aspx*/
 .default-btn-login {width:88px;text-align:center;margin-right:15px;}
-/*SponsorRunner.aspx*/
-.charity-modal-main {border:solid 1px #8c8c8c;padding:0px 10px 20px 10px;margin-top:15px;margin-bottom:15px;}
+
