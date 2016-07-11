@@ -11,4 +11,9 @@
 .default-btn-more {padding-top:30px;padding-bottom:30px;margin-bottom:25px;display:block}
 /*User/Login.aspx*/
 .default-btn-login {width:88px;text-align:center;margin-right:15px;}
+/*MySponsotship.aspx*/
+.amount-list,.runner-list,.status-list {display:block;}
+.amount-item, .runner-item {width:45%;}
+.status-item {width:35%}
+.amount-item,.runner-item,.status-item {padding:15px 15px;display:inline-block;}
 
